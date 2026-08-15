@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">From Europe To You</string>
+    <string name="app_tagline">European Antiques &amp; Architectural Salvage</string>
+    <string name="nav_back">Back</string>
+    <string name="nav_forward">Forward</string>
+    <string name="nav_refresh">Refresh</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_security">SSL Security</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_offline">Offline Cache</string>
+    <string name="nav_share">Share</string>
+    <string name="security_ssl_valid">SSL Pinning Active &amp; Verified</string>
+    <string name="security_mitm_protected">MITM Protection Engaged</string>
+    <string name="offline_mode_active">Offline Caching Enabled</string>
+    <string name="retry_connection">Retry Connection</string>
+    <string name="pull_to_refresh_hint">Pull down to refresh page</string>
+    <string name="clear_cache">Clear Cached Data</string>
+    <string name="dark_mode_title">Dark Theme</string>
+</resources>

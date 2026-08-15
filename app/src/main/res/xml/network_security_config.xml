@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Strict SSL/TLS configuration for fromeuropetoyou.com -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">fromeuropetoyou.com</domain>
+        <domain includeSubdomains="true">www.fromeuropetoyou.com</domain>
+        
+        <!-- Certificate Pinning Configuration with expiration date -->
+        <pin-set expiration="2030-01-01">
+            <!-- Let's Encrypt / ISRG Root X1 -->
+            <pin digest="SHA-256">C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M=</pin>
+            <!-- DigiCert Global Root G2 -->
+            <pin digest="SHA-256">i7WT2SlghM/BmRigi4+WtsPdW0NwcYojw+HNsEIcGxo=</pin>
+            <!-- Cloudflare Inc ECC CA-3 -->
+            <pin digest="SHA-256">kIdp6NNEd8wsugYyyIYFsi1ylMCED3hZbSR8ZFsa/A4=</pin>
+            <!-- Google Trust Services GTS Root R1 -->
+            <pin digest="SHA-256">hxqRlPTuQrgcxIRqlqKuChdghl2enBaMokLRyRqoWGs=</pin>
+            <!-- Baltimore CyberTrust Root -->
+            <pin digest="SHA-256">Y9mvm0exBk1JoQ57fchL0BQ3OEWBSTYT4ceBR+AXZsU=</pin>
+            <!-- Backup Root Certificate Pin -->
+            <pin digest="SHA-256">FEz2O9iAcdoTLHHhnUeeTG0Yunt0KU84JrYWhL0oOM0=</pin>
+        </pin-set>
+        
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </domain-config>
+    
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,0 +1,6 @@
+{
+  "name": "From Europe To You",
+  "description": "Secure European Antiques & Architectural Salvage browser featuring SSL pinning, intelligent offline caching, pull-to-refresh, dark mode, and security analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
